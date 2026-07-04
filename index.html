@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom Beauty Nail Spa — Brand Booklet</title>
+<link rel="icon" type="image/png" href="./assets/icon_butterfly.png">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FDFBFA;--surface:#F6E7EA;--text:#2B2B33;--muted:#6E6470;--accent:#79B8D1;--accent-text:#2E7A99;--rose:#D89AA6;--rose-soft:#EED1D6;--fd:"Fraunces",serif;--fb:"Nunito Sans",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--fb);color:var(--text);background:#e9e4e2;line-height:1.6}
+.page{width:210mm;min-height:297mm;margin:1.5rem auto;background:var(--bg);padding:22mm 20mm;page-break-after:always;box-shadow:0 8px 30px rgba(216,154,166,.25);display:flex;flex-direction:column;position:relative}
+h1,h2{font-family:var(--fd)}
+.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text);margin-bottom:.9rem}
+h2{font-size:2rem;font-weight:600;margin-bottom:1.4rem}
+.rule{width:110px;border:0;border-top:1.5px solid var(--rose);margin-bottom:1.4rem}
+p{font-size:.98rem;margin-bottom:.9rem}
+.muted{color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:.9rem;margin-block:.75rem}
+th,td{text-align:left;padding:.55rem .4rem;border-bottom:1.5px solid var(--rose-soft);vertical-align:top}
+th{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pill{display:inline-block;background:#fff;border:1.5px solid var(--rose);border-radius:999px;padding:.3rem .9rem;font-size:.8rem;font-weight:700;margin:.15rem .25rem .15rem 0}
+.footer{margin-top:auto;padding-top:1.2rem;font-size:.75rem;color:var(--muted);display:flex;justify-content:space-between;align-items:center;border-top:1.5px solid var(--rose-soft)}
+.footer img{width:18px;height:18px}
+.footer .fl{display:flex;align-items:center;gap:.5rem}
+/* cover */
+.cover{background:var(--surface);align-items:center;justify-content:center;text-align:center}
+.cover .wordgram{width:min(150mm,88%);margin-bottom:1.2rem}
+.cover .tag{font-family:var(--fd);font-style:italic;font-size:1.35rem;color:var(--accent-text)}
+.cover .meta{margin-top:2.2rem;font-size:.85rem;color:var(--muted)}
+.cover .contact{margin-top:1.1rem;font-size:.9rem;font-weight:600}
+.cover .contact span{color:var(--accent-text)}
+/* language toggle */
+.lang{display:inline-flex;border:1.5px solid var(--rose);border-radius:999px;overflow:hidden;background:#fff;margin-top:1.8rem}
+.lang button{border:0;background:transparent;font:700 .95rem var(--fb);padding:.55rem 1.4rem;cursor:pointer;color:var(--muted)}
+.lang button.on{background:var(--rose-soft);color:var(--text)}
+/* bilingual switching */
+html[data-lang="en"] [data-es]{display:none}
+html[data-lang="es"] [data-en]{display:none}
+/* swatches */
+.sw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-block:1rem}
+.sw{border-radius:16px;overflow:hidden;border:1.5px solid var(--rose-soft)}
+.sw .chip{height:64px}
+.sw .lab{padding:.6rem .8rem;font-size:.78rem;background:#fff}
+.sw .lab b{display:block;font-size:.88rem}
+/* type spec */
+.spec-display{font-family:var(--fd);font-weight:700;font-size:2.5rem;line-height:1.05;margin-bottom:.4rem}
+.spec-es{font-family:var(--fd);font-style:italic;font-weight:600;color:var(--accent-text);font-size:1.3rem;margin-bottom:1.2rem}
+/* shape demo */
+.shape-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-block:1rem}
+.demo-btn{background:var(--accent);color:var(--text);font-weight:600;padding:.85rem 1.9rem;border-radius:999px;font-size:.95rem}
+.demo-card{background:var(--surface);border-radius:24px;padding:1rem 1.4rem;font-size:.85rem;box-shadow:0 8px 30px rgba(216,154,166,.18)}
+.demo-input{border:1.5px solid var(--rose);border-radius:12px;padding:.7rem 1rem;font-size:.85rem;color:var(--muted);background:#fff}
+/* do dont */
+.dd{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;font-size:.9rem}
+.dd .do{color:var(--text)}.dd .dont{color:var(--muted)}
+.dd b.g{color:var(--accent-text)}.dd b.r{color:#A05261}
+/* logo page */
+.logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:1.1rem}
+.logo-cell{background:#fff;border:1.5px solid var(--rose-soft);border-radius:16px;padding:1.1rem;text-align:center}
+.logo-cell img{max-width:100%;max-height:78px;object-fit:contain}
+.logo-cell.dark{background:var(--text)}
+.logo-cell small{display:block;margin-top:.5rem;font-size:.72rem;color:var(--muted);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.logo-cell.dark small{color:var(--rose-soft)}
+.icon-inline{width:22px;height:22px;vertical-align:-4px;margin-right:.35rem}
+@media (max-width:840px){
+  body{background:var(--bg)}
+  .page{width:100%;min-height:auto;margin:0;padding:2rem 1.25rem;box-shadow:none;border-bottom:1.5px solid var(--rose-soft)}
+  .cover{min-height:100svh}
+  .cover .wordgram{width:100%}
+  .cover .tag{font-size:1.1rem}
+  h2{font-size:1.5rem}
+  .spec-display{font-size:1.7rem}
+  table{font-size:.8rem}
+  th,td{padding:.45rem .3rem}
+  .sw-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .logo-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .dd{grid-template-columns:1fr;gap:8px}
+  .shape-row{gap:10px}
+}
+@media print{
+  body{background:#fff}
+  .page{margin:0;box-shadow:none;width:210mm;height:297mm;min-height:auto}
+  .lang{display:none}
+  @page{size:A4 portrait;margin:0}
+}
+</style>
+</head>
+<body>
+
+<section class="page cover">
+  <img class="wordgram" src="./assets/wordgram_stacked.png" alt="Bloom Beauty Nail Spa — script wordgram with blue butterfly and hand">
+  <p class="tag"><span data-en>Healthier feet. Renewed confidence.</span><span data-es>Pies más sanos. Confianza renovada.</span></p>
+  <div class="lang" role="group" aria-label="Language / Idioma">
+    <button id="btn-en" class="on" onclick="setLang('en')">EN</button>
+    <button id="btn-es" onclick="setLang('es')">ES</button>
+  </div>
+  <p class="meta">
+    <span data-en>Brand Booklet · Version 2.0 · July 2026<br>Territory: Clínica Suave · Prepared by Consequi Partners LLC</span>
+    <span data-es>Manual de Marca · Versión 2.0 · Julio 2026<br>Territorio: Clínica Suave · Elaborado por Consequi Partners LLC</span>
+  </p>
+  <p class="contact">bloombeautynailspa.com · (805) 637-9499 · <span data-en>Santa Barbara, CA</span><span data-es>Santa Bárbara, CA</span></p>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>01 · Brand strategy</span><span data-es>01 · Estrategia de marca</span></p><hr class="rule">
+  <h2><span data-en>A specialist, not a salon</span><span data-es>Una especialista, no un salón más</span></h2>
+  <p><b data-en>One-liner.</b><b data-es>En una línea.</b> <span data-en>Bloom Beauty Nail Spa is a licensed, bilingual nail and clinical-pedicure studio in Santa Barbara where clients leave with healthier feet and renewed confidence — not just polish.</span><span data-es>Bloom Beauty Nail Spa es un estudio bilingüe y con licencia de uñas y pedicura clínica en Santa Bárbara, donde las clientas salen con pies más sanos y confianza renovada — no solo con esmalte.</span></p>
+  <p><b data-en>Archetype.</b><b data-es>Arquetipo.</b> <span data-en>Caregiver (primary) · Sage (secondary). The brand feels like being genuinely looked after by someone who knows exactly what she's doing.</span><span data-es>Cuidadora (primario) · Sabia (secundario). La marca se siente como ser atendida de verdad por alguien que sabe exactamente lo que hace.</span></p>
+  <p><b data-en>The enemy.</b><b data-es>El enemigo.</b> <span data-en>The assembly-line nail salon: rushed, interchangeable, no health knowledge, no relationship. Every brand decision is the deliberate opposite.</span><span data-es>El salón de uñas en serie: con prisas, impersonal, sin conocimiento de salud y sin relación con la clienta. Cada decisión de marca es deliberadamente lo contrario.</span></p>
+  <p><b data-en>Audience.</b><b data-es>Audiencia.</b> <span data-en>Local Spanish- and English-speaking women, 30–60, arriving from Instagram and word-of-mouth. They value being remembered.</span><span data-es>Mujeres de la zona que hablan español e inglés, de 30 a 60 años, que llegan por Instagram y recomendaciones. Valoran que las recuerden.</span></p>
+  <p><b data-en>The feeling, five seconds in.</b><b data-es>La sensación, a los cinco segundos.</b> <span data-en>"This is a real professional who will take care of <i>me</i>." Warm. Clean. Trustworthy. Personal.</span><span data-es>"Esta es una verdadera profesional que va a cuidar de <i>mí</i>." Cálido. Limpio. Confiable. Personal.</span></p>
+  <p><b data-en>Leverage asset.</b><b data-es>Activo clave.</b> <span data-en>The blue butterfly — transformation made visible. It owns the action color, serves as the favicon, and marks the way through every layout.</span><span data-es>La mariposa azul — la transformación hecha visible. Es dueña del color de acción, funciona como favicon y guía el recorrido en cada diseño.</span></p>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca</span></span><span>02</span></div>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>02 · Tone of voice</span><span data-es>02 · Tono de voz</span></p><hr class="rule">
+  <h2><span data-en>Caring · Credentialed · Bilingual-warm</span><span data-es>Cercana · Certificada · Bilingüe y cálida</span></h2>
+  <p><b data-en>Is not:</b><b data-es>No es:</b> <span data-en>rushed, clinical-cold, cutesy.</span><span data-es>apresurada, fría-clínica, ni cursi.</span></p>
+  <p><span data-en>English and Spanish are peers on every surface — never one a translated afterthought. The credential appears above the fold, always: <i>Licensed Manicurist · Técnica en pedicura clínica</i>.</span><span data-es>El inglés y el español son iguales en cada superficie — ninguno es una traducción de relleno. La credencial aparece siempre en la parte superior: <i>Licensed Manicurist · Técnica en pedicura clínica</i>.</span></p>
+  <table>
+    <tr><th data-en>In brand</th><th data-es>Dentro de la marca</th><th data-en>Off brand</th><th data-es>Fuera de la marca</th></tr>
+    <tr>
+      <td><span data-en>"Tus pies también merecen cuidado experto — book your clinical pedicure at Bloom Beauty Nail Spa today."</span><span data-es>"Tus pies también merecen cuidado experto — agenda hoy tu pedicura clínica en Bloom Beauty Nail Spa."</span></td>
+      <td><span data-en>"OMG girl!! Slots going FAST, don't sleep on these deals!!"</span><span data-es>"¡¡Amiga, córrele!! ¡Los lugares VUELAN, no te duermas con estas promos!!"</span></td>
+    </tr>
+    <tr>
+      <td><span data-en>"Every visit starts with a health check, because beautiful nails begin with healthy feet."</span><span data-es>"Cada visita comienza con una revisión, porque las uñas hermosas empiezan con pies sanos."</span></td>
+      <td><span data-en>"Our synergistic wellness solutions leverage best-in-class methodologies."</span><span data-es>"Nuestras soluciones sinérgicas de bienestar aprovechan metodologías de clase mundial."</span></td>
+    </tr>
+  </table>
+  <p><b data-en>Rules.</b><b data-es>Reglas.</b> <span data-en>Lead with care, prove with credentials. Short sentences, warm verbs: care, restore, renew, protect. Emojis live in social captions only. Prices stated plainly — clarity is a form of care.</span><span data-es>Primero el cuidado, respaldado por credenciales. Frases cortas y verbos cálidos: cuidar, restaurar, renovar, proteger. Los emojis solo van en redes sociales. Los precios se dicen claro — la claridad también es una forma de cuidar.</span></p>
+  <p class="muted"><span data-en>Spanish register: Mexico City regional — warm "tú" form, natural phrasing, never machine-literal.</span><span data-es>Registro del español: regional de la Ciudad de México — tuteo cálido, fraseo natural, nunca traducción literal de máquina.</span></p>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca</span></span><span>03</span></div>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>03 · Logo system</span><span data-es>03 · Sistema de logotipo</span></p><hr class="rule">
+  <h2><span data-en>One family, four roles</span><span data-es>Una familia, cuatro funciones</span></h2>
+  <div class="logo-grid">
+    <div class="logo-cell"><img src="./assets/wordgram_stacked.png" alt="Stacked wordgram"><small data-en>Stacked wordgram · covers &amp; heroes</small><small data-es>Wordgram vertical · portadas y héroes</small></div>
+    <div class="logo-cell"><img src="./assets/wordgram_horizontal.png" alt="Horizontal wordgram"><small data-en>Horizontal wordgram · website header</small><small data-es>Wordgram horizontal · encabezado web</small></div>
+    <div class="logo-cell"><img src="./assets/icon_hand.png" alt="Hand and butterfly icon"><small data-en>Icon lockup · section accents</small><small data-es>Ícono compuesto · acentos de sección</small></div>
+    <div class="logo-cell"><img src="./assets/icon_butterfly.png" alt="Butterfly icon"><small data-en>Butterfly · favicon &amp; primary icon</small><small data-es>Mariposa · favicon e ícono principal</small></div>
+  </div>
+  <table>
+    <tr><th data-en>Spec</th><th data-es>Especificación</th><th data-en>Rule</th><th data-es>Regla</th></tr>
+    <tr><td><span data-en>Wordgram usage</span><span data-es>Uso del wordgram</span></td><td><span data-en>Booklet cover, website header, and key cover sections of the home page only — typically placed over a hero image.</span><span data-es>Solo en la portada del manual, el encabezado del sitio web y las secciones clave de portada del home — normalmente sobre una imagen hero.</span></td></tr>
+    <tr><td><span data-en>Butterfly icon</span><span data-es>Ícono de mariposa</span></td><td><span data-en>Favicon and the primary icon associated with Bloom Beauty Nail Spa; wayfinding marks, app tiles, social avatars.</span><span data-es>Favicon e ícono principal asociado a Bloom Beauty Nail Spa; señalización, íconos de app y avatares en redes.</span></td></tr>
+    <tr><td><span data-en>Clear space</span><span data-es>Espacio libre</span></td><td><span data-en>Height of the butterfly on all four sides.</span><span data-es>La altura de la mariposa por los cuatro lados.</span></td></tr>
+    <tr><td><span data-en>Minimum size</span><span data-es>Tamaño mínimo</span></td><td><span data-en>Wordgram 140px width · butterfly icon 24px.</span><span data-es>Wordgram 140px de ancho · mariposa 24px.</span></td></tr>
+    <tr><td><span data-en>Backgrounds</span><span data-es>Fondos</span></td><td><span data-en>Porcelain, Blush Veil, white, or photography with a light scrim; transparent PNGs provided.</span><span data-es>Porcelana, Velo Rubor, blanco o fotografía con velo claro; se entregan PNG transparentes.</span></td></tr>
+    <tr><td><span data-en>Never</span><span data-es>Nunca</span></td><td><span data-en>Recolor, rotate, add shadows, stretch, or set the script face in live type.</span><span data-es>Recolorear, rotar, agregar sombras, estirar, ni componer la tipografía script como texto vivo.</span></td></tr>
+  </table>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca</span></span><span>04</span></div>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>04 · Color system</span><span data-es>04 · Sistema de color</span></p><hr class="rule">
+  <h2><span data-en>Blush warmth, clinical clarity</span><span data-es>Calidez rubor, claridad clínica</span></h2>
+  <div class="sw-grid">
+    <div class="sw"><div class="chip" style="background:#FDFBFA;border-bottom:1.5px solid var(--rose-soft)"></div><div class="lab"><b>Porcelain</b><span data-en>#FDFBFA · page canvas</span><span data-es>#FDFBFA · lienzo de página</span></div></div>
+    <div class="sw"><div class="chip" style="background:#F6E7EA"></div><div class="lab"><b>Blush Veil</b><span data-en>#F6E7EA · cards, sections</span><span data-es>#F6E7EA · tarjetas, secciones</span></div></div>
+    <div class="sw"><div class="chip" style="background:#2B2B33"></div><div class="lab"><b>Ink</b><span data-en>#2B2B33 · text · 13.9:1 AAA</span><span data-es>#2B2B33 · texto · 13.9:1 AAA</span></div></div>
+    <div class="sw"><div class="chip" style="background:#6E6470"></div><div class="lab"><b>Mauve Grey</b><span data-en>#6E6470 · muted · 5.6:1 AA</span><span data-es>#6E6470 · atenuado · 5.6:1 AA</span></div></div>
+    <div class="sw"><div class="chip" style="background:#79B8D1"></div><div class="lab"><b>Mariposa Blue</b><span data-en>#79B8D1 · CTA fills · text #2E7A99 AA</span><span data-es>#79B8D1 · botones · texto #2E7A99 AA</span></div></div>
+    <div class="sw"><div class="chip" style="background:#D89AA6"></div><div class="lab"><b>Petal Rose</b><span data-en>#D89AA6 · hovers, dividers</span><span data-es>#D89AA6 · hover, divisores</span></div></div>
+  </div>
+  <p><b data-en>Hard rules.</b><b data-es>Reglas fijas.</b> <span data-en>Body text only in Ink or Mauve Grey — never white-on-blush. Blue text on white uses #2E7A99. One Mariposa Blue CTA per viewport: the booking button owns the color. Petal Rose is decorative, never text.</span><span data-es>El texto de párrafo solo va en Ink o Mauve Grey — nunca blanco sobre rubor. El texto azul sobre blanco usa #2E7A99. Un solo botón Mariposa Blue por pantalla: el botón de reserva es dueño del color. Petal Rose es decorativo, nunca texto.</span></p>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca</span></span><span>05</span></div>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>05 · Typography</span><span data-es>05 · Tipografía</span></p><hr class="rule">
+  <h2>Fraunces &amp; Nunito Sans</h2>
+  <p class="spec-display"><span data-en>Healthier feet, renewed confidence</span><span data-es>Pies más sanos, confianza renovada</span></p>
+  <p class="spec-es"><span data-en>Pies más sanos, confianza renovada</span><span data-es>Healthier feet, renewed confidence</span></p>
+  <p><span data-en>Display: <b>Fraunces 600/700</b> — a soft serif whose old-style warmth echoes the wordgram script without competing. Never below 1.25rem.</span><span data-es>Display: <b>Fraunces 600/700</b> — una serif suave cuya calidez de estilo antiguo hace eco del script del wordgram sin competir con él. Nunca menor a 1.25rem.</span></p>
+  <p><span data-en>Body: <b>Nunito Sans 400/600/700</b> — humanist, mobile-legible, full Spanish diacritics (á é í ó ú ñ ¿ ¡).</span><span data-es>Cuerpo: <b>Nunito Sans 400/600/700</b> — humanista, legible en móvil, con todos los diacríticos del español (á é í ó ú ñ ¿ ¡).</span></p>
+  <table>
+    <tr><th>Token</th><th data-en>Size</th><th data-es>Tamaño</th><th data-en>Line height</th><th data-es>Interlineado</th></tr>
+    <tr><td>Display</td><td>clamp(2.5rem, 6vw, 4rem)</td><td>1.05</td></tr>
+    <tr><td>H1</td><td>clamp(2rem, 4.5vw, 3rem)</td><td>1.1</td></tr>
+    <tr><td>H2</td><td>clamp(1.5rem, 3vw, 2rem)</td><td>1.15</td></tr>
+    <tr><td>H3</td><td>1.25rem</td><td>1.3</td></tr>
+    <tr><td data-en>Body</td><td data-es>Cuerpo</td><td>1rem</td><td>1.65</td></tr>
+    <tr><td data-en>Small</td><td data-es>Pequeño</td><td>0.875rem</td><td>1.5</td></tr>
+    <tr><td data-en>Button</td><td data-es>Botón</td><td>1rem · 600 · ls .01em</td><td>1</td></tr>
+  </table>
+  <p class="muted"><span data-en>Banned faces: Inter, Poppins, Montserrat, Roboto, Open Sans.</span><span data-es>Tipografías prohibidas: Inter, Poppins, Montserrat, Roboto, Open Sans.</span></p>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca</span></span><span>06</span></div>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>06 · Shape &amp; motion</span><span data-es>06 · Forma y movimiento</span></p><hr class="rule">
+  <h2><span data-en>The lozenge rhythm</span><span data-es>El ritmo de la pastilla</span></h2>
+  <div class="shape-row">
+    <span class="demo-btn"><span data-en>Book now →</span><span data-es>Reservar →</span></span>
+    <span class="demo-card"><span data-en>24px card · soft blush shadow</span><span data-es>Tarjeta 24px · sombra rubor suave</span></span>
+    <span class="demo-input"><span data-en>12px input</span><span data-es>Campo 12px</span></span>
+  </div>
+  <table>
+    <tr><th data-en>Element</th><th data-es>Elemento</th><th data-en>Spec</th><th data-es>Especificación</th></tr>
+    <tr><td><span data-en>Buttons / badges</span><span data-es>Botones / insignias</span></td><td><span data-en>Pill (999px)</span><span data-es>Pastilla (999px)</span></td></tr>
+    <tr><td><span data-en>Cards</span><span data-es>Tarjetas</span></td><td><span data-en>24px radius</span><span data-es>Radio de 24px</span></td></tr>
+    <tr><td><span data-en>Image masks</span><span data-es>Máscaras de imagen</span></td><td><span data-en>32px radius</span><span data-es>Radio de 32px</span></td></tr>
+    <tr><td><span data-en>Inputs</span><span data-es>Campos</span></td><td><span data-en>12px radius</span><span data-es>Radio de 12px</span></td></tr>
+    <tr><td><span data-en>Dividers</span><span data-es>Divisores</span></td><td><span data-en>1.5px Petal Rose hairlines — no grey 1px borders</span><span data-es>Líneas finas de 1.5px en Petal Rose — sin bordes grises de 1px</span></td></tr>
+    <tr><td><span data-en>Elevation</span><span data-es>Elevación</span></td><td>0 8px 30px rgba(216,154,166,.18)</td></tr>
+    <tr><td><span data-en>Motion</span><span data-es>Movimiento</span></td><td><span data-en>250ms ease-out fade + 8px rise on scroll; hover lifts 1px; reduced-motion respected</span><span data-es>Aparición de 250ms + elevación de 8px al hacer scroll; hover sube 1px; se respeta reduced-motion</span></td></tr>
+  </table>
+  <p><span data-en>Outer containers are always rounder than inner. The butterfly icon marks section starts and list items — small and repeated, never a watermark.</span><span data-es>Los contenedores externos siempre son más redondeados que los internos. El ícono de mariposa marca inicios de sección y elementos de lista — pequeño y repetido, nunca como marca de agua.</span></p>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca</span></span><span>07</span></div>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>07 · Marketing templates</span><span data-es>07 · Plantillas de marketing</span></p><hr class="rule">
+  <h2><span data-en>Format specs per channel</span><span data-es>Especificaciones por canal</span></h2>
+  <table>
+    <tr><th data-en>Channel</th><th data-es>Canal</th><th data-en>Format</th><th data-es>Formato</th><th data-en>Spec</th><th data-es>Especificación</th></tr>
+    <tr><td><span data-en>Website hero</span><span data-es>Hero del sitio</span></td><td>16:9</td><td><span data-en>Hero image with light scrim, horizontal wordgram overlaid, single blue CTA</span><span data-es>Imagen hero con velo claro, wordgram horizontal encima y un solo botón azul</span></td></tr>
+    <tr><td>Instagram post</td><td>1:1</td><td><span data-en>Blush Veil field, Ink type, butterfly icon corner mark</span><span data-es>Fondo Velo Rubor, tipografía Ink, mariposa en la esquina</span></td></tr>
+    <tr><td>Instagram story</td><td>9:16</td><td><span data-en>Full-bleed treatment photo, white lozenge caption card</span><span data-es>Foto de tratamiento a sangre completa, tarjeta blanca tipo pastilla</span></td></tr>
+    <tr><td>Google Business</td><td>4:3</td><td><span data-en>Studio/result photography, no text overlay</span><span data-es>Fotografía del estudio o resultados, sin texto encima</span></td></tr>
+    <tr><td><span data-en>Booking email</span><span data-es>Correo de reserva</span></td><td>—</td><td><span data-en>Nunito Sans only, butterfly icon at 32px, blue button, footer: bloombeautynailspa.com · (805) 637-9499</span><span data-es>Solo Nunito Sans, mariposa a 32px, botón azul, pie: bloombeautynailspa.com · (805) 637-9499</span></td></tr>
+  </table>
+  <p><b data-en>Photography direction.</b><b data-es>Dirección fotográfica.</b> <span data-en>Natural light; real hands and feet mid-treatment; blush and white environments. No stock-spa clichés — no orchids, no stones, no lotus.</span><span data-es>Luz natural; manos y pies reales en pleno tratamiento; ambientes rubor y blanco. Sin clichés de spa de banco de imágenes — ni orquídeas, ni piedras, ni flor de loto.</span></p>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca</span></span><span>08</span></div>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>08 · Do / Don't</span><span data-es>08 · Sí / No</span></p><hr class="rule">
+  <h2><span data-en>Five calls that keep it on brand</span><span data-es>Cinco decisiones que mantienen la marca</span></h2>
+  <div class="dd">
+    <p class="do"><b class="g" data-en>Do</b><b class="g" data-es>Sí</b> — <span data-en>one Mariposa Blue "Book / Reservar" button per screen.</span><span data-es>un solo botón Mariposa Blue de "Reservar" por pantalla.</span></p>
+    <p class="dont"><b class="r" data-en>Don't</b><b class="r" data-es>No</b> — <span data-en>scatter three competing CTAs.</span><span data-es>regar tres botones que compiten entre sí.</span></p>
+    <p class="do"><b class="g" data-en>Do</b><b class="g" data-es>Sí</b> — <span data-en>pair every English headline with its Spanish peer.</span><span data-es>acompañar cada titular en inglés con su par en español.</span></p>
+    <p class="dont"><b class="r" data-en>Don't</b><b class="r" data-es>No</b> — <span data-en>hide Spanish behind a settings menu.</span><span data-es>esconder el español en un menú de configuración.</span></p>
+    <p class="do"><b class="g" data-en>Do</b><b class="g" data-es>Sí</b> — <span data-en>state the clinical credential above the fold.</span><span data-es>mostrar la credencial clínica en la parte superior.</span></p>
+    <p class="dont"><b class="r" data-en>Don't</b><b class="r" data-es>No</b> — <span data-en>bury "pedicura clínica" in an about paragraph.</span><span data-es>enterrar "pedicura clínica" en un párrafo de "acerca de".</span></p>
+    <p class="do"><b class="g" data-en>Do</b><b class="g" data-es>Sí</b> — <span data-en>use the butterfly icon as a small, repeated wayfinding mark.</span><span data-es>usar la mariposa como marca pequeña y repetida de señalización.</span></p>
+    <p class="dont"><b class="r" data-en>Don't</b><b class="r" data-es>No</b> — <span data-en>enlarge it into a watermark or hero graphic.</span><span data-es>agrandarla como marca de agua o gráfico principal.</span></p>
+    <p class="do"><b class="g" data-en>Do</b><b class="g" data-es>Sí</b> — <span data-en>show real treatment photography from the Santa Barbara studio.</span><span data-es>mostrar fotografía real de tratamientos del estudio en Santa Bárbara.</span></p>
+    <p class="dont"><b class="r" data-en>Don't</b><b class="r" data-es>No</b> — <span data-en>use stock images of anonymous spas.</span><span data-es>usar imágenes de banco de spas anónimos.</span></p>
+  </div>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca</span></span><span>09</span></div>
+</section>
+
+<section class="page">
+  <p class="eyebrow"><span data-en>09 · Contact &amp; asset index</span><span data-es>09 · Contacto e índice de activos</span></p><hr class="rule">
+  <h2><span data-en>Deliverables &amp; status</span><span data-es>Entregables y estatus</span></h2>
+  <table>
+    <tr><th data-en>Contact</th><th data-es>Contacto</th><th></th></tr>
+    <tr><td><span data-en>Website</span><span data-es>Sitio web</span></td><td>bloombeautynailspa.com</td></tr>
+    <tr><td><span data-en>Phone</span><span data-es>Teléfono</span></td><td>(805) 637-9499</td></tr>
+    <tr><td><span data-en>Location</span><span data-es>Ubicación</span></td><td><span data-en>Santa Barbara, CA</span><span data-es>Santa Bárbara, CA</span></td></tr>
+  </table>
+  <table>
+    <tr><th data-en>Asset</th><th data-es>Activo</th><th data-en>Status</th><th data-es>Estatus</th></tr>
+    <tr><td><span data-en>Stacked wordgram (PNG, transparent)</span><span data-es>Wordgram vertical (PNG, transparente)</span></td><td><span data-en>Final · covers &amp; heroes only</span><span data-es>Final · solo portadas y héroes</span></td></tr>
+    <tr><td><span data-en>Horizontal wordgram (PNG, transparent)</span><span data-es>Wordgram horizontal (PNG, transparente)</span></td><td><span data-en>Final · website header</span><span data-es>Final · encabezado del sitio</span></td></tr>
+    <tr><td><span data-en>Butterfly icon (PNG)</span><span data-es>Ícono de mariposa (PNG)</span></td><td><span data-en>Final · favicon &amp; primary icon</span><span data-es>Final · favicon e ícono principal</span></td></tr>
+    <tr><td><span data-en>Hand icon lockup (PNG, transparent)</span><span data-es>Ícono compuesto de mano (PNG, transparente)</span></td><td><span data-en>Final · section accents</span><span data-es>Final · acentos de sección</span></td></tr>
+    <tr><td>tokens.json · typography_spec.md · design-system.md</td><td><span data-en>Approved</span><span data-es>Aprobados</span></td></tr>
+    <tr><td><span data-en>Website mockup (index.html)</span><span data-es>Maqueta del sitio (index.html)</span></td><td><span data-en>Pending v2 rename update</span><span data-es>Pendiente actualización v2 de nombre</span></td></tr>
+  </table>
+  <p class="muted"><span data-en><b>Phase 2 engagement:</b> studio photography, live Square link, domain launch (bloombeautynailspa.com), Google Business Profile.</span><span data-es><b>Fase 2 del proyecto:</b> fotografía del estudio, enlace activo de Square, lanzamiento del dominio (bloombeautynailspa.com) y perfil de Google Business.</span></p>
+  <p style="margin-top:1rem"><span class="pill" data-en>Care</span><span class="pill" data-es>Cuidar</span><span class="pill" data-en>Restore</span><span class="pill" data-es>Restaurar</span><span class="pill" data-en>Renew</span><span class="pill" data-es>Renovar</span></p>
+  <div class="footer"><span class="fl"><img src="./assets/icon_butterfly.png" alt=""><span data-en>Bloom Beauty Nail Spa · Brand Booklet · Consequi Partners LLC</span><span data-es>Bloom Beauty Nail Spa · Manual de Marca · Consequi Partners LLC</span></span><span>10</span></div>
+</section>
+
+<script>
+function setLang(l){
+  document.documentElement.setAttribute('data-lang',l);
+  document.documentElement.lang=l;
+  document.getElementById('btn-en').classList.toggle('on',l==='en');
+  document.getElementById('btn-es').classList.toggle('on',l==='es');
+}
+setLang('en');
+</script>
+</body>
+</html>
